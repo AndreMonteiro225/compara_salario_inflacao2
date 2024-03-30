@@ -74,7 +74,8 @@ if(opcao == 1) {
             var valor_ano_anterior = salarios[propriedade].valor;
         }
         let resultado = valor_salario - valor_ano_anterior;
-        
+        let crescimento_salarial = (resultado/valor_ano_anterior) * 100
+            console.log(`o crescimento salarial foi de : ${crescimento_salarial.toFixed(2)}%`);
             console.log(`a diferença de salarios entre o ano de ${salarios[propriedade].ano} e ${salarios[anoAtual].ano} é de: R$${resultado.toFixed(2)}\n`);
         }
 }

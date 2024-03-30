@@ -55,7 +55,7 @@ switch(opcao) {
 if(opcao == 1) {
     for(let propriedade in salarios){
         var array_salario = salarios[propriedade];
-        console.log(`o salario do ano de ${array_salario.ano} é de ${array_salario.valor}R$`);
+        console.log(`o salario do ano de ${array_salario.ano} é de R$ ${array_salario.valor}`);
     }
 } else if(opcao == 2) {
     for(let propriedade in inflacoes) {
@@ -67,6 +67,7 @@ if(opcao == 1) {
         var array_salarios = salarios[propriedade];
         var valor_salario = array_salarios.valor;
         console.log(`a inflação no ano ${inflacoes[propriedade].ano} foi de ${inflacoes[propriedade].ipca}%`)
+        console.log(`salario minimo: ${salarios[propriedade].valor}`)
         let anoAtual = propriedade;
         if(propriedade > 0){
             propriedade -= 1;
